@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Club de Fans de los Caballeros del Zodiaco</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico.png">                              
     <style>
       .tabla,
       .tabla th,
       .tabla td {
         border: 1px solid black;
+        border-collapse: collapse;
       }
     </style>
   </head>
@@ -68,7 +70,7 @@
 
         <table class="tabla">
           <caption>
-            <h3>Caballeros, constelaciones y su poder</h3>
+            <h3>Los cabelleros, constelación y poder</h3>
           </caption>
           <tr>
             <th>Caballero</th>
@@ -104,7 +106,13 @@
       </section>
 
       <section id="multimedia">
-        <h2>Multimedia</h2>
+        <h2>¿De qué va la serie?</h2>
+
+        <p>Los Caballeros del Zodiaco nos cuenta la historia de un grupo de jóvenes que luchan por proteger
+          a Atenea, la diosa de la Justicia. Cada uno lleva una armadura de la constelación del zodiaco, usando
+          el poder de su cosmos que es una energía que sale de su fuerza interior.<br> Sus protagonistas son Seiya,
+          Shiryu, Hyoga, Shun y Ikiki y nos muestran valores como la amistad, el esfuerzo y la superación, mientras
+          combaten a enemigos muy poderosos, como otros caballeros o incluso dioses del 
 
         <figure>
           <picture>
@@ -148,8 +156,6 @@
           <input type="text" id="nombre" name="nombre" value="Escribe tu nombre"><br>
           <label for="apellido">apellido</label><br>
           <input type="text" id="apellido" name="apellido" value="Escribe tu apellido"><br>
-          <label for="email">Correo electrónico</label><br>
-          <input id="email" name="email" type="email" required placeholder="seiya@ejemplo.com">
           <p>Selecciona tu personaje favorito</p>
           <input type="radio" id="Seiya" name="personaje-favorito" value="Seiya">
           <label for="Seiya">Seiya</label><br>
@@ -161,7 +167,19 @@
           <label for="Shun">Shun</label><br>
           <input type="radio" id="Ikiki" name="personaje-favorito" value="Ikiki">
           <label for="Ikiki">Ikiki</label><br><br>
+          <label for="email">Correo electrónico</label><br>
+          <input id="email" name="email" type="email" required placeholder="seiya@ejemplo.com"><br><br>
+          <label for="series">¿Cuál es tu serie favorita?</label><br>
+          <select name="series" id="series">
+            <option value="Dragon">Dragon Ball Z</option>
+            <option value="Piece">One Piece</option>
+            <option value="Pokemon">Pokemon</option>
+            <option value="Naruto">Naruto</option>
+            <option value="Inuyasha">Inuyasha</option>
+          </select><br><br>
           <input type="submit" value="Enviar">
+
+          </select>
         </form>
 
         <p><a href="#inicio">Volver al inicio</a></p>
@@ -171,7 +189,6 @@
     <footer>
       <p>2025 Los Caballeros del Zodiaco</p>
       <h3>La comunidad de los caballeros</h3>
-
         <ul>
           <li><a href="https://www.facebook.com/groups/452373205686442?locale=nn_NO" target="_blank">
           <img src="images/logo-facebook.png" alt="Facebook" width="30"></a></li>
