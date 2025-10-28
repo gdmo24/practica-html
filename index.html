@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .tabla,
+      .tabla th,
+      .tabla td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <figure>
+        <img src="/images/portada-caballeros.jpg" alt="Caballeros del Zodiaco">
+      </figure>
+    </header>
+
+    <main>
+      <section id="inicio">
+        <h1>Los Caballeros del Zodiaco</h1>
+        <nav>
+          <ul>
+            <li>Inicio</li>
+            <li>Los Caballeros</li>
+            <li>Multimedia</li>
+            <li>Contacto</li>
+            <li>
+              <a href="https://www.saintseiya.com.es/">Para estar al día</a>
+            </li>
+          </ul>
+        </nav>
+        <h2>Bienvenidos al Santuario</h2>
+        <p>¿Quién son los legendarios Caballeros del Zodiaco que luchan por Atenea?</p>
+      </section>
+
+      <section id="personajes">
+        <h3>Estos son nuestros protagonistas</h3>
+
+        <ul>
+          <li>Seiya (Pegaso)</li>
+          <li>Shiryu (Dragón)</li>
+          <li>Hyoga (Cisne)</li>
+          <li>Shun (Andrómeda)</li>
+          <li>Ikki (Fénix)</li>
+        </ul>
+
+        <h3>Y estas son las casas del zodiaco</h3>
+        <ol>
+          <li>Aries</li>
+          <li>Tauro</li>
+          <li>Géminis</li>
+          <li>Cáncer</li>
+          <li>Leo</li>
+          <li>Virgo</li>
+          <li>Libra</li>
+          <li>Escorpio</li>
+          <li>Sagitario</li>
+          <li>Capricornio</li>
+          <li>Acuario</li>
+          <li>Piscis</li>
+        </ol>
+
+        <table class="tabla">
+          <caption>
+            <h3>Caballeros, constelaciones y su poder</h3>
+          </caption>
+          <tr>
+            <th>Caballero</th>
+            <th>Constelación</th>
+            <th>Técnica</th>
+          </tr>
+          <tr>
+            <td>Seiya</td>
+            <td>Pegaso</td>
+            <td>Meteoro de Pegaso</td>
+          </tr>
+          <tr>
+            <td>Shiryu</td>
+            <td>Dragón</td>
+            <td>Colmillo del Dragón</td>
+          </tr>
+          <tr>
+            <td>Hyoga</td>
+            <td>Cisne</td>
+            <td>Polvo de Diamantes</td>
+          </tr>
+          <tr>
+            <td>Shun</td>
+            <td>Andrómeda</td>
+            <td>Cadenas de Andrómeda</td>
+          </tr>
+          <tr>
+            <td>Ikki</td>
+            <td>Fénix</td>
+            <td>Ala Ardiente del Fénix</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="multimedia">
+        <h2>Multimedia</h2>
+
+        <figure>
+          <picture>
+            <source srcset="https://upload.wikimedia.org/wikipedia/en/4/40/Saint_Seiya_group.jpg" type="image/jpeg">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/40/Saint_Seiya_group.jpg" alt="Los cinco Caballeros de Bronce">
+          </picture>
+          <figcaption>Los cinco Caballeros de Bronce.</figcaption>
+        </figure>
+
+        <h3>Intro de la serie</h3>
+        <iframe
+         width="560"
+        height="315"
+        src="https://www.youtube.com/embed/BLXHuZ-1C_4?si=NHX5C_xqm18KTd3H"
+        title="YouTube video player"
+        style="border: none;"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+        </iframe>
+
+        <h3>Y este es su audio</h3>
+        <audio controls>
+          <source
+            src="audio/los_caballeros_del_zodiaco_intro.mp3"
+            type="audio/mp3">
+        </audio>
+
+        <p>Más información:
+          <br>
+          <a href="https://es.wikipedia.org/wiki/Saint_Seiya">Wikipedia</a>
+          <br>
+          <a href="https://saintseiya.fandom.com/es/wiki/Saint_Seiya_Wiki">Fandom</a></p>
+      </section>
+
+      <section id="contacto">
+        <h2>Formulario de contacto</h2>
+
+        <form action="contacto.html" method="post">
+          <label for="nombre">Nombre</label><br>
+          <input type="text" id="nombre" name="nombre" value="Escribe tu nombre"><br>
+          <label for="apellido">apellido</label><br>
+          <input type="text" id="apellido" name="apellido" value="Escribe tu apellido"><br>
+          <label for="email">Correo electrónico</label><br>
+          <input id="email" name="email" type="email" required placeholder="seiya@ejemplo.com">
+          <p>Selecciona tu personaje favorito</p>
+          <input type="radio" id="Seiya" name="personaje-favorito" value="Seiya">
+          <label for="Seiya">Seiya</label><br>
+          <input type="radio" id="Shiryu" name="personaje-favorito" value="Shiryu">
+          <label for="Shiryu">Shiryu</label>
+          <input type="radio" id=""
+        </form>
+
+        <p><a href="#inicio">Volver al inicio</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>2025 Los Caballeros del Zodiaco</p>
+      <h3>La comunidad de los caballeros</h3>
+
+        <ul>
+          <li><a href="https://www.facebook.com/groups/452373205686442?locale=nn_NO" target="_blank">
+          <img src="/images/logo-facebook.png" alt="Facebook" width="30"></a></li>
+          <li><a href="https://www.instagram.com/caballeros_del_zodiaco.la/" target="_blank">
+            <img src="/images/logo-instagram.png" alt="Instagram" width="30"></a></li>
+          <li><a href="https://www.tiktok.com/@caballerosdelzodiaco12">
+            <img src="/images/logo-tiktok.png" alt="Tiktok" width="30"></a></li>
+          <li><a href="https://x.com/NoContextSeiya" target="_blank">
+            <img src="/images/logo-x.png" alt="X" width="30"></a></li>
+        </ul>
+    </footer>
+  </body>
+</html>
