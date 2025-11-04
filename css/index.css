@@ -8,3 +8,9 @@ h1 {
 h3 {
     color: yellow;
 }
+
+#caballerosSection {
+    background-color: aliceblue;
+    text-align: center;
+    color: red ;
+ }
