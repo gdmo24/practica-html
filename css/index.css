@@ -1,16 +1,196 @@
 * {
-    background-color: black;
-    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-h1 {
-    color: blue;
+body {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+}
+header {
+    margin: 1%;
+    font-family: 'Orbitron', sans-serif;
+    color: #fdfd96;
+    text-shadow: 0 0 12px #ffff00;
+    font-size: 30px;
+}
+nav {
+    background-color: #000;
+    padding: 0%;
+    display: flex;
+    position: relative;
+    box-shadow: 0 4px 10px yellow,
+                0 -4px 10px yellow;
+    justify-content: center;
+}
+nav ul {
+    list-style: none;
+    margin: 0%;
+    padding:1%;
+    display: flex;
+    gap: 60px;
+    position: relative;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    padding: 8px 8px;
+}
+nav a:hover {
+    background-color: #111;
+    color: yellow;
+    text-shadow: 0 0 10px yellow;
+}
+nav:hover {
+    background-color: #111;
+}
+.submenu {
+    position: relative;
+}
+.submenu .desplegable {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    background: none;
+    padding: 0%;
+    margin: 0%;
+    box-shadow: none;
+    border-radius: 0px;
+    min-width: 250px;
+    z-index: 100;
+}
+.submenu:hover .desplegable {
+    display: block;
+}
+.desplegable a {
+    display: block;
+    padding: 4px 0;
+    background: transparent;
+    color: #fff;
+    white-space: nowrap;
+}
+.desplegable a:hover {
+    color: yellow;
+    text-shadow: 0 0 8px yellow;
+    background: transparent;
+}
+
+img {
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ffff00;
+    margin: 20px 0;
+    width: 350px;
+    height: auto;
+}
+main {
+    margin-top: 5%;
 }
 h3 {
     color: yellow;
+    margin-bottom: 10px;
 }
 
 #caballerosSection {
-    background-color: aliceblue;
-    text-align: center;
-    color: red ;
- }
+    padding: 40px 20px;
+}
+
+#caballerosSection h3 {
+    color: #ffff00;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ffff00;
+}
+#caballerosSection img {
+    border-radius: 15px;
+    margin: 10px auto;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    width: 350px;
+    height: auto;
+}
+#caballerosSection p {
+    margin: 10px auto;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    text-align: justify;
+    color: #f5f5f5;
+}
+#caballerosSection ul {
+    list-style: none;
+    padding: 0%;
+    margin: 20px auto;
+    font-weight: bold;
+}
+#caballerosSection ul li {
+    margin: 5px 0;
+}
+
+#caballerosSection strong {
+    color: #ffff66;
+}
+#ShinchanSection {
+    padding: 40px 20px;
+    border-top: 2px solid #c0392b;
+    border-bottom: 2px solid #c0392b;
+}
+#ShinchanSection h3 {
+    color: #ff6b6b;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #c0392b;
+}
+
+#ShinchanSection img {
+    border-radius: 15px;
+    box-shadow: 0 0 20px #c0392b;
+    margin:  20px 0;
+    width: 300px;
+    height: auto;
+}
+
+#ShinchanSection p {
+    margin: 10px auto;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    text-align: justify;
+    color: #f5f5f5;
+}
+
+#NarutoSection {
+    padding: 40px 20px;
+    border-top: 2px solid;
+    border-bottom: 2px solid #f57c00;
+}
+#NarutoSection h3 {
+    color: #ffa726;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #f57c00;
+}
+#NarutoSection img {
+    border-radius: 15px;
+    box-shadow: 0 0 20px #f57c00;
+    margin: 20px 0;
+    width: 300px;
+    height: auto;
+}
+#NarutoSection p {
+    margin: 10px auto;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    text-align: justify;
+    color: #f5f5f5;
+}
