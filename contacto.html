@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="css/contacto.css" />
 </head>
+
 <body>
-    
+    <header>
+        <h1>Anime clásico</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="submenu"><a href="#">Series</a>
+                <ul class="desplegable">
+                    <li><a href="Caballeros">Cabelleros del Zodiaco</a></li>
+                    <li><a href="ShinChan">Shin Chan</a></li>
+                    <li><a href="Naruto">Naruto</a></li>
+                </ul>
+            </li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="acercade.html">Acerca de</a></li>
+        </ul>
+    </nav>
+    <section id="contacto">
+        <h3>Formulario de contacto</h3>
+
+        <form action="contacto.html" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" value="Escribe tu nombre"><br>
+            <label for="apellido">apellido</label>
+            <input type="text" id="apellido" name="apellido" value="Escribe tu apellido"><br>
+            <p>Introduce tu usuario</p>
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" minlength="2" maxlength="8"><br>
+            <p>Selecciona tu serie favorita</p>
+            <input type="radio" id="Caballeros" name="personaje-favorito" value="Caballeros">
+            <label for="Caballeros">Caballeros del Zodiaco</label>
+            <input type="radio" id="Chan" name="personaje-favorito" value="Shin Chan">
+            <label for="Chan">Shin Chan</label><br>
+            <input type="radio" id="Naruto" name="personaje-favorito" value="Naruto">
+            <label for="Naruto">Naruto</label><br>
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" required placeholder="tumail@dominio.com"><br>
+            <label for="series">¿Qué otras series están entre tus favoritas?</label>
+            <select name="series" id="series">
+                <option value="Dragon">Dragon Ball Z</option>
+                <option value="Piece">One Piece</option>
+                <option value="Pokemon">Pokemon</option>
+                <option value="Inuyasha">Inuyasha</option>
+            </select><br>
+            <input type="submit" value="Enviar">
+
+        </form>
+
+    </section>
+    <p><a href="index.html">Volver al inicio</a></p>
+    <footer id="footer">
+        <div class="footer-izd">
+            <p>2025 Los Caballeros del Zodiaco</p>
+        </div>
+        <div class="footer-centro">
+            <h3>Redes sociales</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/groups/452373205686442?locale=nn_NO" target="_blank">
+                        <img src="images/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/caballeros_del_zodiaco.la/" target="_blank">
+                        <img src="images/instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://www.tiktok.com/@caballerosdelzodiaco12">
+                        <img src="images/logo-tiktok.png" alt="Tiktok"></a></li>
+                <li><a href="https://x.com/NoContextSeiya" target="_blank">
+                        <img src="images/x.png" alt="X"></a></li>
+            </ul>
+        </div>
+        <div class="footer-der">
+            <p>Proyecto Lenguaje de marcas 1 ASIR</p>
+        </div>
+    </footer>
 </body>
+
 </html>
