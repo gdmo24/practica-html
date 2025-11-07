@@ -108,6 +108,10 @@ nav:hover {
     width: 100%;
     text-align: center;
 }
+#contacto input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
 
 #contacto h3 {
     color: yellow;
