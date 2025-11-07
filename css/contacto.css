@@ -1,4 +1,4 @@
-/* ---------- RESETEO BÁSICO ---------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,29 +10,29 @@ header {
     color: #fdfd96;
     text-shadow: 0 0 12px #ffff00;
     font-size: 30px;
+    text-align: center;
 }
 
-
-/* ---------- CUERPO DE LA PÁGINA ---------- */
 body {
     background-image: url("/practica-html/images/fondo\ contacto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
     color: #fff;
     font-family: 'Orbitron', sans-serif;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 30px;
 }
+
 nav {
-    padding: 0%;
     display: flex;
     position: relative;
     box-shadow: 0 4px 10px yellow,
                 0 -4px 10px yellow;
     justify-content: center;
 }
+
 nav ul {
     list-style: none;
     margin: 0%;
@@ -41,6 +41,7 @@ nav ul {
     gap: 60px;
     position: relative;
 }
+
 nav a {
     text-decoration: none;
     color: #fff;
@@ -49,31 +50,37 @@ nav a {
     transition: all 0.3s ease;
     padding: 8px 8px;
 }
+
 nav a:hover {
     background-color: #111;
     color: yellow;
     text-shadow: 0 0 10px yellow;
 }
+
 nav:hover {
     background-color: #111;
 }
+
 .submenu {
     position: relative;
 }
+
 .submenu .desplegable {
     display: none;
     position: absolute;
     top: 100%;
-    left: 50%;
-    transform: translate(-50%);
+    left: -99%;
+    transform: none;
     background: none;
     padding: 0%;
     margin: 0%;
     box-shadow: none;
     border-radius: 0px;
     min-width: 250px;
+    width: 100%;
     z-index: 100;
 }
+
 .submenu:hover .desplegable {
     display: block;
 }
@@ -89,10 +96,10 @@ nav:hover {
     text-shadow: 0 0 8px yellow;
     background: transparent;
 }
-/* ---------- SECCIÓN DE CONTACTO ---------- */
+
 #contacto {
-    margin: 5%;
-    background-color: #111;
+    margin: 40px auto;
+    background-color: rgba(0, 0, 0, 0.7);
     border: 2px solid yellow;
     border-radius: 10px;
     box-shadow: 0 0 20px yellow;
@@ -102,7 +109,6 @@ nav:hover {
     text-align: center;
 }
 
-/* ---------- TÍTULO ---------- */
 #contacto h3 {
     color: yellow;
     text-transform: uppercase;
@@ -111,7 +117,6 @@ nav:hover {
     text-shadow: 0 0 10px yellow;
 }
 
-/* ---------- FORMULARIO ---------- */
 form {
     display: flex;
     flex-direction: column;
@@ -119,7 +124,7 @@ form {
     align-items: flex-start;
 }
 
-/* ---------- ETIQUETAS Y CAMPOS ---------- */
+
 label {
     color: #fdfd96;
     font-weight: bold;
@@ -145,9 +150,9 @@ select:focus {
     background-color: #333;
 }
 
-/* ---------- BOTÓN ENVIAR ---------- */
+
 input[type="submit"] {
-    background-color: yellow;
+    background-color: #ffa726;
     color: black;
     font-weight: bold;
     border: none;
@@ -162,7 +167,7 @@ input[type="submit"]:hover {
     box-shadow: 0 0 15px yellow;
 }
 
-/* ---------- ENLACE VOLVER ---------- */
+
 #contacto a {
     display: inline-block;
     margin-top: 20px;
@@ -176,19 +181,18 @@ input[type="submit"]:hover {
     text-shadow: 0 0 10px yellow;
 }
 #footer {
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fdfd96;
     display: flex;
-    justify-content: space-between; /* reparte izquierda-centro-derecha */
+    justify-content: space-between; 
     align-items: center;
     padding: 20px 40px;
     box-shadow: 0 -4px 10px yellow;
     border-top: 2px solid yellow;
     font-family: 'Orbitron', sans-serif;
-    flex-wrap: wrap; /* por si en pantallas pequeñas se apila */
+    flex-wrap: wrap;
 }
 
-/* ----- IZQUIERDA ----- */
 .footer-izd p {
     margin: 0;
     font-size: 1rem;
@@ -196,7 +200,6 @@ input[type="submit"]:hover {
     color: #fdfd96;
 }
 
-/* ----- CENTRO ----- */
 .footer-centro {
     text-align: center;
 }
@@ -230,7 +233,7 @@ input[type="submit"]:hover {
     box-shadow: 0 0 20px yellow;
 }
 
-/* ----- DERECHA ----- */
+
 .footer-der p {
     margin: 0;
     font-size: 1rem;
