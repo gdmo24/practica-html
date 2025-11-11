@@ -14,7 +14,7 @@ header {
 }
 
 body {
-    background-image: url("/images/fondo\ contacto.png");
+    background-color: #111;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
@@ -97,93 +97,6 @@ nav:hover {
     background: transparent;
 }
 
-#contacto {
-    margin: 40px auto;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 2px solid yellow;
-    border-radius: 10px;
-    box-shadow: 0 0 20px yellow;
-    padding: 40px 50px;
-    max-width: 500px;
-    width: 100%;
-    text-align: center;
-}
-#contacto input[type="radio"] {
-    width: auto;
-    margin-right: 10px;
-}
-
-#contacto h3 {
-    color: yellow;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    text-shadow: 0 0 10px yellow;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: flex-start;
-}
-
-
-label {
-    color: #fdfd96;
-    font-weight: bold;
-    margin-top: 8px;
-}
-
-input,
-select {
-    width: 100%;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    background-color: #222;
-    color: white;
-    font-size: 1rem;
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
-}
-
-input:focus,
-select:focus {
-    outline: none;
-    box-shadow: 0 0 10px yellow;
-    background-color: #333;
-}
-
-
-input[type="submit"] {
-    background-color: #ffa726;
-    color: black;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: all-scroll;
-    transition: all 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #fdfd96;
-    box-shadow: 0 0 15px yellow;
-}
-
-
-#contacto a {
-    display: inline-block;
-    margin-top: 20px;
-    color: yellow;
-    text-decoration: none;
-    font-weight: bold;
-    transition: text-shadow 0.3s ease;
-}
-
-#contacto a:hover {
-    text-shadow: 0 0 10px yellow;
-}
 #footer {
     background-color: rgba(0, 0, 0, 0.8);
     color: #fdfd96;
