@@ -19,7 +19,6 @@ body {
     background-size: cover;
     background-position: left center;
     color: #fff;
-    font-family: 'Orbitron', sans-serif;
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
@@ -69,7 +68,7 @@ nav:hover {
     display: none;
     position: absolute;
     top: 100%;
-    left: -99%;
+    left: 50%;
     transform: none;
     background: none;
     padding: 0%;
@@ -77,7 +76,6 @@ nav:hover {
     box-shadow: none;
     border-radius: 0px;
     min-width: 250px;
-    width: 100%;
     z-index: 100;
 }
 
@@ -97,6 +95,25 @@ nav:hover {
     background: transparent;
 }
 
+img {
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ffff00;
+    margin: 20px 0;
+    width: 350px;
+    height: auto;
+}
+
+#historia {
+    padding: 40px 20px;
+}
+
+#historia p {
+    margin: 10px auto;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    text-align: justify;
+    color: #f5f5f5;
+}
 #footer {
     background-color: rgba(0, 0, 0, 0.8);
     color: #fdfd96;
