@@ -188,7 +188,6 @@ h3 {
 #ShinchanSection {
     padding: 40px 20px;
     border-top: 2px solid #c0392b;
-    border-bottom: 2px solid #c0392b;
 }
 
 #ShinchanSection h3 {
@@ -218,7 +217,7 @@ h3 {
 
 #NarutoSection {
     padding: 40px 20px;
-    border-top: 2px solid;
+    border-top: 2px solid #f57c00;
     border-bottom: 2px solid #f57c00;
 }
 
