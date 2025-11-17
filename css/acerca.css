@@ -3,6 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/orbitron/orbitron-light.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/orbitron/orbitron-medium.otf') format('opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/orbitron/orbitron-bold.otf') format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/orbitron/orbitron-black.otf') format('opentype');
+    font-weight: 900;
+}
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+h1 { 
+    font-weight: 900; 
+} 
+h2 { 
+    font-weight: 700; 
+} 
+h3 { 
+    font-weight: 500; 
+} 
 
 body {
     background-color: #000;
@@ -142,112 +177,24 @@ h3 {
 a {
     text-decoration: none;
 }
-#caballerosSection {
+#acercade {
     padding: 40px 20px;
 }
-
-#caballerosSection h3 {
-    color: #ffff00;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    text-shadow: 0 0 10px #ffff00;
-}
-
-#caballerosSection img {
-    border-radius: 15px;
-    margin: 10px auto;
-    line-height: 1.6;
-    font-size: 1.1rem;
-    width: 350px;
-    height: auto;
-}
-
-#caballerosSection p {
+#acercade p {
     margin: 10px auto;
     line-height: 1.6;
     font-size: 1.1rem;
     text-align: justify;
     color: #f5f5f5;
 }
-
-#caballerosSection ul {
-    list-style: none;
-    padding: 0%;
-    margin: 20px auto;
-    font-weight: bold;
-}
-
-#caballerosSection ul li {
-    margin: 5px 0;
-}
-
-#caballerosSection strong {
-    color: #ffff66;
-}
-
-#ShinchanSection {
-    padding: 40px 20px;
-    border-top: 2px solid #c0392b;
-}
-
-#ShinchanSection h3 {
-    color: #ff6b6b;
-    font-size: 2rem;
+#acercade h2 {
+    color: yellow;
     text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 10px yellow;
     letter-spacing: 2px;
-    margin-bottom: 20px;
-    text-shadow: 0 0 10px #c0392b;
+    margin-bottom: 18px;
 }
-
-#ShinchanSection img {
-    border-radius: 15px;
-    box-shadow: 0 0 20px #c0392b;
-    margin: 20px 0;
-    width: 300px;
-    height: auto;
-}
-
-#ShinchanSection p {
-    margin: 10px auto;
-    line-height: 1.6;
-    font-size: 1.1rem;
-    text-align: justify;
-    color: #f5f5f5;
-}
-
-#NarutoSection {
-    padding: 40px 20px;
-    border-top: 2px solid #f57c00;
-    border-bottom: 2px solid #f57c00;
-}
-
-#NarutoSection h3 {
-    color: #ffa726;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    text-shadow: 0 0 10px #f57c00;
-}
-
-#NarutoSection img {
-    border-radius: 15px;
-    box-shadow: 0 0 20px #f57c00;
-    margin: 20px 0;
-    width: 300px;
-    height: auto;
-}
-
-#NarutoSection p {
-    margin: 10px auto;
-    line-height: 1.6;
-    font-size: 1.1rem;
-    text-align: justify;
-    color: #f5f5f5;
-}
-
 #footer {
     background-color: #000;
     color: #fdfd96;
@@ -260,10 +207,9 @@ a {
     border-top: 2px solid yellow;
     font-family: 'Orbitron', sans-serif;
     flex-wrap: wrap;
-    /* por si en pantallas pequeñas se apila */
 }
 
-/* ----- IZQUIERDA ----- */
+
 .footer-izd p {
     margin: 0;
     font-size: 1rem;
@@ -271,7 +217,7 @@ a {
     color: #fdfd96;
 }
 
-/* ----- CENTRO ----- */
+
 .footer-centro {
     text-align: center;
 }
