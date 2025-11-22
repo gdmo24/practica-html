@@ -1,192 +1,43 @@
-/* --- 1. RESET Y FUENTES --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* === shinchan.css === */
 
-/* Fuentes Orbitron */
-@font-face {
-    font-family: 'Orbitron';
-    src: url('../fonts/orbitron/orbitron-light.otf') format('opentype');
-    font-weight: 300;
-}
-@font-face {
-    font-family: 'Orbitron';
-    src: url('../fonts/orbitron/orbitron-medium.otf') format('opentype');
-    font-weight: 500;
-}
-@font-face {
-    font-family: 'Orbitron';
-    src: url('../fonts/orbitron/orbitron-bold.otf') format('opentype');
-    font-weight: 700;
-}
-@font-face {
-    font-family: 'Orbitron';
-    src: url('../fonts/orbitron/orbitron-black.otf') format('opentype');
+/* --- CONTENIDO ESPECÍFICO DE SHIN CHAN --- */
+h1 {
+    color: var(--rojo-oscuro); /* Usa tu variable definida para rojo */
+    text-shadow: 0 0 10px var(--rojo-claro); /* Efecto neón con amarillo */
     font-weight: 900;
-}
-
-/* Base de Tipografía */
-h1, h2, h3 {
-    font-family: 'Orbitron', sans-serif;
-}
-h1 { font-weight: 900; }
-h2 { font-weight: 700; }
-h3 { font-weight: 500; }
-ul, ol { list-style: none; } /* Incluye la lista ordenada */
-a { text-decoration: none; }
-
-/* Base del Cuerpo */
-body {
-    background-color: #000;
-    color: #fff;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
     text-align: center;
-    font-family: sans-serif;
-}
-header {
-    margin: 1%;
-    color: #c0392b; /* Amarillo suave */
-    text-shadow: 0 0 12px #ff6b6b; /* Amarillo brillante */
-    font-size: 30px;
-    text-align: center;
+    margin: 30px 0;
 }
 
-main { margin-top: 5%; }
-
-/* Base de Imágenes */
-img {
-    border-radius: 15px;
-    box-shadow: 0 0 20px #c0392b; /* Amarillo por defecto (puede ser sobrescrito) */
-    margin: 20px 0;
-    width: 350px;
-    height: auto;
-}
-
-/* --- 2. NAVEGACIÓN (GRID + FLEX RESPONSIVA) --- */
-nav {
-    background-color: #000;
-    padding: 0%;
-    display: grid; 
-    grid-template-columns: 1fr;
-    justify-items: center;
-    position: relative;
-    box-shadow: 0 4px 10px #c0392b, 0 -4px 10px #c0392b;
-}
-
-nav ul {
-    margin: 0%;
-    padding: 1%;
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    position: relative;
-    width: max-content;
-}
-
-nav a {
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.1em;
-    transition: all 0.3s ease;
-    padding: 8px 8px;
-}
-nav a:hover {
-    background-color: #111;
-    color: #ff6b6b;
-    text-shadow: 0 0 10px #c0392b;
-}
-nav:hover { background-color: #111; }
-
-.submenu { position: relative; }
-.submenu .desplegable {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%);
-    background: none;
-    padding: 0%;
-    margin: 0%;
-    box-shadow: none;
-    border-radius: 0px;
-    min-width: 250px;
-    z-index: 100;
-}
-.submenu:hover .desplegable { display: block; }
-
-.desplegable a {
-    display: block;
-    padding: 4px 0;
-    background: transparent;
-    color: #fff;
-    white-space: nowrap;
-}
-.desplegable a:hover {
-    color: #ff6b6b;
-    text-shadow: 0 0 8px #c0392b;
-    background: transparent;
-}
-
-/* RESPONSIVIDAD DEL NAV */
-@media (max-width: 768px) {
-    nav ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-        padding: 15px;
-        width: 100%;
-        margin: 0;
-    }
-    nav a {
-        display: block;
-        padding: 10px 0;
-        font-size: 0.9em; 
-        text-align: center;
-    }
-}
-@media (max-width: 480px) {
-    nav ul {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-    nav ul li {
-        width: 100%;
-        border-top: 1px solid #333;
-    }
-    nav a {
-        padding: 15px 0;
-        font-size: 1.1em;
-    }
-}
-/* --- VIDEO INTRO --- */
-#intro-shinchan {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px 0 60px;
-}
-
-#intro-shinchan h2 {
-    color: yellow;
-    text-align: center;
-    font-size: 1.8rem;
-    text-shadow: 0 0 12px yellow;
+/* Títulos H2 */
+#intro-shinchan h2,
+#galeria-shinchan h2 {
+    color: var(--rojo-claro); /* asumiendo que tienes esta variable */
+    text-shadow: 0 0 12px var(--rojo-oscuro);
     margin-bottom: 20px;
     margin-top: 5px;
     letter-spacing: 2px;
 }
+
+/* Contenedor del vídeo */
 .div-shinchan {
     position: relative;
-    width: 50%;
-    height: 50%;
-    padding-bottom: 40.25%; /* 16:9 Aspect Ratio */
+    width: 90%;
+    max-width: 800px;
+    padding-bottom: 40%;
+    height: 0;
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: 0 0 25px yellow;
+    box-shadow: 0 0 25px var(--rojo-oscuro);
+    margin: 0 auto;
 }
-
+@media (max-width: 700px) {
+    .div-shinchan {
+        padding-bottom: 75%;
+    }
+}
 .div-shinchan iframe {
     position: absolute;
     top: 0;
@@ -197,52 +48,33 @@ nav:hover { background-color: #111; }
     border-radius: 15px;
 }
 
-/* --- GALERIA DE FOTOS --- */
+/* Galería de fotos */
 #galeria-shinchan {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px 0 40px;
-    overflow: visible;
 }
-
-#galeria-shinchan h2 {
-    color: yellow;
-    text-align: center;
-    font-size: 1.8rem;
-    text-shadow: 0 0 12px yellow;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    letter-spacing: 2px;
-}
-
 #galeria-shinchan .contenedor {
-    list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
-    padding: 0;
-    margin: 0;
-    overflow: visible;
 }
-
 #galeria-shinchan .contenedor li {
     position: relative;
     width: 190px;
     height: 200px;
     border-radius: 18px;
-    box-shadow: 0 0 15px yellow;
+    box-shadow: 0 0 15px var(--rojo-oscuro);
     animation: flotando 3s ease infinite alternate;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
-    overflow: visible;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    padding: 0;
-    margin: 0;
 }
-
+@keyframes flotando {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-8px); }
+}
 #galeria-shinchan .contenedor li img {
     position: absolute;
     top: -19px;
@@ -251,98 +83,57 @@ nav:hover { background-color: #111; }
     height: 101%;
     object-fit: cover;
     border-radius: 18px;
-    display: block;
     transition: transform 0.4s ease, height 0.4s ease, box-shadow 0.4s ease;
 }
-
-@keyframes flotando {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-8px);
-    }
-}
-
 #galeria-shinchan .contenedor li:hover {
     z-index: 50;
-    box-shadow: 0 0 30px #ffff66; /* Amarillo un poco más claro */
+    box-shadow: 0 0 30px var(--rojo-claro);
 }
-
 #galeria-shinchan .contenedor li:hover img {
-    position: absolute;
-    top: -10;
     left: 50%;
+    top: -10px;
     transform: translateX(-50%) scale(1.2);
     width: 320px;
     height: auto;
-    object-fit: contain;
     border-radius: 20px;
-}
-/* --- SECCIÓN PRINCIPAL SHIN CHAN --- */
-#ShinchanSection {
-    padding: 40px 20px;
-    border-top: 2px solid #c0392b; /* ROJO OSCURO */
+    box-shadow: 0 0 20px var(--rojo-oscuro);
+    object-fit: contain;
 }
 
-#ShinchanSection p {
-    margin: 10px auto;
-    line-height: 1.6;
-    font-size: 1.1rem;
-    text-align: justify;
-    color: #f5f5f5;
-}
-
-#ShinchanSection h3 {
-    color: #ff6b6b; 
-    text-shadow: 0 0 10px #c0392b;
-}
-
-#ShinchanSection img {
-    box-shadow: 0 0 20px #c0392b; 
-    width: 300px;
-}
-
-
-
-#tabla-shinchan { 
-    border-bottom: 2px solid #c0392b;
+/* Tabla de personajes */
+#tabla-shinchan {
+    border-bottom: 2px solid var(--rojo-oscuro);
     padding-bottom: 40px;
 }
-
 #tabla-shinchan h2 {
-    color: #ff6b6b; /* Rojo Claro/Rosa */
+    color: var(--rojo-claro);
     text-transform: uppercase;
     text-align: center;
-    text-shadow: 0 0 10px #c0392b; /* Sombra Rojo Oscuro */
+    text-shadow: 0 0 10px var(--rojo-oscuro);
     letter-spacing: 2px;
     margin-bottom: 18px;
 }
-
 #tabla-shinchan table {
     width: 90%;
-    max-width: 500px; /* Ancho máximo compacto */
+    max-width: 500px;
     margin: 0 auto;
     border-collapse: collapse;
-    box-shadow: 0 0 15px #c0392b; /* Sombra ROJA */
+    box-shadow: 0 0 15px var(--rojo-oscuro);
 }
-
 #tabla-shinchan th {
     background-color: #111;
-    color: #ff6b6b; /* Texto de encabezado Rojo/Rosa */
-    border: 1px solid #c0392b; /* Borde de encabezado Rojo Oscuro */
-    padding: 8px; 
+    color: var(--rojo-claro);
+    border: 1px solid var(--rojo-oscuro);
+    padding: 8px;
     font-size: 1.2rem;
 }
-
 #tabla-shinchan td {
-    border: 1px solid #c0392b; /* Bordes internos Rojo Oscuro */
-    padding: 8px; 
-    color: #fff;
-    background-color: #000;
+    border: 1px solid var(--rojo-oscuro);
+    padding: 8px;
+    color: var(--color-texto);
+    background-color: var(--color-negro);
     text-align: center;
 }
-
 #tabla-shinchan img {
     width: 100px;
     height: 100px;
@@ -350,88 +141,10 @@ nav:hover { background-color: #111; }
     border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 0;
-    box-shadow: 0 0 10px yellow;
+    box-shadow: 0 0 10px var(--rojo-oscuro);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 #tabla-shinchan img:hover {
     transform: scale(1.15);
-    box-shadow: 0 0 20px #c0392b;
-}
-
-/* Footer */
-#footer {
-    background-color: #000;
-    color: #fdfd96; /* Amarillo Suave */
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    padding: 20px 40px;
-    box-shadow: 0 -4px 12px #c0392b, 0 4px 12px #c0392b;
-    border-top: 2px solid #c0392b;
-    font-family: 'Orbitron', sans-serif;
-    gap: 20px;
-}
-
-.footer-izd p {
-    justify-self: flex-start;
-}
-
-.footer-centro {
-    justify-self: center;
-    text-align: center;
-}
-
-.footer-der {
-    justify-self: flex-end;
-    text-align: right;
-}
-
-.footer-centro h3 {
-    color: #ff6b6b;
-    margin-bottom: 8px;
-    text-shadow: 0 0 8px #c0392b;
-}
-
-.footer-centro ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-centro ul li a img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px yellow;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.footer-centro ul li a img:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 20px yellow;
-}
-
-.footer-der p {
-    margin: 0;
-    font-size: 1rem;
-    text-align: right;
-    color: #fdfd96;
-}
-
-/* Media Query */
-@media (max-width: 600px) {
-    #footer {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .footer-izd, .footer-der {
-        justify-self: center;
-        text-align: center;
-    }
+    box-shadow: 0 0 20px var(--rojo-oscuro);
 }

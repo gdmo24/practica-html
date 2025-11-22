@@ -1,0 +1,186 @@
+/* === caballeros.css === */
+
+/* --- CONTENIDO ESPECÍFICO DE CABALLEROS DEL ZODIACO --- */
+h1 {
+    color: var(--color-amarillo); /* Usa tu variable definida para rojo */
+    text-shadow: 0 0 10px var(--color-amarillo); /* Efecto neón con amarillo */
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Sección: Introducción con video */
+#intro-caballeros {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 60px;
+}
+
+#intro-caballeros h2 {
+    color: var(--color-amarillo);
+    text-align: center;
+    font-size: 1.8rem;
+    text-shadow: 0 0 12px var(--color-amarillo);
+    margin-bottom: 20px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.div-caballeros {
+    position: relative;
+    max-width: 900px;
+    width: 90%;
+    padding-bottom: 40%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 25px var(--color-amarillo);
+}
+@media (max-width: 700px) {
+.div-caballeros {
+    padding-bottom: 75%;
+}
+}
+.div-caballeros iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+/* Sección: Galería flotante */
+#galeria-flotante {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 40px;
+}
+
+#galeria-flotante h2 {
+    color: var(--color-amarillo);
+    text-align: center;
+    font-size: 1.8rem;
+    text-shadow: 0 0 12px var(--color-amarillo);
+    margin-bottom: 20px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+#galeria-flotante .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#galeria-flotante .contenedor li {
+    position: relative;
+    width: 190px;
+    height: 200px;
+    border-radius: 18px;
+    box-shadow: 0 0 15px var(--color-amarillo);
+    animation: flotando 3s ease infinite alternate;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#galeria-flotante .contenedor li img {
+    position: absolute;
+    top: -19px;
+    left: 0;
+    width: 100%;
+    height: 101%;
+    object-fit: cover;
+    border-radius: 18px;
+    transition: transform 0.4s ease, height 0.4s ease, box-shadow 0.4s ease;
+}
+
+@keyframes flotando {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-8px); }
+}
+
+#galeria-flotante .contenedor li:hover {
+    z-index: 50;
+    box-shadow: 0 0 30px var(--color-amarillo);
+}
+
+#galeria-flotante .contenedor li:hover img {
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) scale(1.2);
+    width: 320px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+/* Sección: Historia */
+#historia h2 {
+    color: var(--color-amarillo);
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 10px var(--color-amarillo);
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+/* Sección: Tabla de personajes */
+#tabla {
+    padding: 40px 20px;
+}
+
+#tabla h2 {
+    color: var(--color-amarillo);
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 10px var(--color-amarillo);
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+#tabla table {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px var(--color-amarillo);
+}
+
+#tabla th {
+    background-color: #111;
+    color: var(--color-amarillo);
+    padding: 15px;
+    border: 1px solid var(--color-amarillo);
+    font-size: 1.2rem;
+}
+
+#tabla td {
+    border: 1px solid var(--color-amarillo);
+    padding: 15px;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    text-align: center;
+}
+
+#tabla img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 8px;
+    box-shadow: 0 0 10px var(--color-amarillo);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#tabla img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 20px var(--color-amarillo);
+}
