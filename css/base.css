@@ -17,6 +17,7 @@
     --rojo-oscuro:#c0392b;
 
     --color-naranja: #f57c00;
+    --color-gris: #333;
     --font-main: 'Orbitron', sans-serif;
 }
 
@@ -63,7 +64,7 @@ p {
     line-height: 1.6;
     font-size: 1.1rem;
     text-align: left;
-    color: #f5f5f5;
+    color: var(--color-text);
     margin: 10px auto;
 }
 

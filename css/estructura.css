@@ -46,10 +46,6 @@ nav a:hover {
     background-color: transparent;
 }
 
-nav:hover {
-    background-color: #111;
-}
-
 /* SUBMENÚ */
 .submenu {
     position: relative;
@@ -158,8 +154,7 @@ nav:hover {
 .footer-izd {
     justify-self: flex-start;
 }
-.footer-izd p,
-.footer-der p {
+.footer-izd p, .footer-der p {
     margin: 0;
     font-size: 1rem;
     color: var(--footer-amarillo);

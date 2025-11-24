@@ -1,111 +1,30 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    margin: 1%;
-    font-family: 'Orbitron', sans-serif;
-    color: #fdfd96; /* Amarillo suave */
-    text-shadow: 0 0 12px #ffff00; /* Amarillo brillante */
-    font-size: 30px;
-    text-align: center;
-}
 
 body {
     background-image: url("../images/fondo-contacto.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
-    color: #fff; /* Blanco */
     font-family: 'Orbitron', sans-serif;
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
 }
-
-/* Navegación (Nav) */
-nav {
-    display: flex;
-    position: relative;
-    /* Sombras amarillas */
-    box-shadow: 0 4px 10px yellow, 0 -4px 10px yellow;
-    justify-content: center;
+h1 {
+    color: var(--color-amarillo); /* Usa tu variable definida para rojo */
+    text-shadow: 0 0 10px var(--color-amarillo); /* Efecto neón con amarillo */
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 30px 0;
 }
-
-nav ul {
-    list-style: none;
-    margin: 0%;
-    padding: 1%;
-    display: flex;
-    gap: 60px;
-    position: relative;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.1em;
-    transition: all 0.3s ease;
-    padding: 8px 8px;
-}
-
-nav a:hover {
-    background-color: #111;
-    color: yellow;
-    text-shadow: 0 0 10px yellow;
-}
-
-nav:hover {
-    background-color: #111;
-}
-
-/* Submenú */
-.submenu {
-    position: relative;
-}
-
-.submenu .desplegable {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: -99%;
-    transform: none;
-    background: none;
-    padding: 0%;
-    margin: 0%;
-    box-shadow: none;
-    border-radius: 0px;
-    min-width: 250px;
-    width: 100%;
-    z-index: 100;
-}
-
-.submenu:hover .desplegable {
-    display: block;
-}
-.desplegable a {
-    display: block;
-    padding: 4px 0;
-    background: transparent;
-    color: #fff;
-    white-space: nowrap;
-}
-.desplegable a:hover {
-    color: yellow;
-    text-shadow: 0 0 8px yellow;
-    background: transparent;
-}
-
 /* --- Sección Contacto --- */
 #contacto {
     margin: 40px auto;
     background-color: rgba(0, 0, 0, 0.7);
-    border: 2px solid yellow;
+    border: 2px solid var(--color-amarillo);
     border-radius: 10px;
-    box-shadow: 0 0 20px yellow;
+    box-shadow: 0 0 20px var(--color-amarillo);
     padding: 40px 50px;
     max-width: 500px;
     width: 100%;
@@ -117,11 +36,11 @@ nav:hover {
 }
 
 #contacto h3 {
-    color: yellow;
+    color: var(--color-amarillo);
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    text-shadow: 0 0 10px yellow;
+    text-shadow: 0 0 10px var(--color-amarillo);
 }
 
 form {
@@ -132,7 +51,7 @@ form {
 }
 
 label {
-    color: #fdfd96; /* Amarillo suave */
+    color: var(--color-amarillo);
     font-weight: bold;
     margin-top: 8px;
 }
@@ -143,8 +62,8 @@ select {
     padding: 8px;
     border: none;
     border-radius: 5px;
-    background-color: #222; /* Gris oscuro */
-    color: white;
+    background-color: var(--color-gris); /* Gris oscuro */
+    color: var(--color-text);
     font-size: 1rem;
     transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
@@ -152,12 +71,12 @@ select {
 input:focus,
 select:focus {
     outline: none;
-    box-shadow: 0 0 10px yellow;
-    background-color: #333; /* Gris más oscuro */
+    box-shadow: 0 0 10px var(--color-amarillo);
+    background-color: var(--color-gris); 
 }
 
 input[type="submit"] {
-    background-color: #ffa726; /* Naranja */
+    background-color: var(--color-amarillo); 
     color: black;
     font-weight: bold;
     border: none;
@@ -168,95 +87,19 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #fdfd96; /* Amarillo suave */
-    box-shadow: 0 0 15px yellow;
+    background-color: var(--footer-amarillo); 
+    box-shadow: 0 0 15px var(--color-amarillo);
 }
 
 #contacto a {
     display: inline-block;
     margin-top: 20px;
-    color: yellow;
+    color: var(--color-amarillo);
     text-decoration: none;
     font-weight: bold;
     transition: text-shadow 0.3s ease;
 }
 
 #contacto a:hover {
-    text-shadow: 0 0 10px yellow;
-}
-
-/* --- Footer --- */
-#footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fdfd96; /* Amarillo suave */
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    padding: 20px 40px;
-    box-shadow: 0 -4px 10px yellow;
-    border-top: 2px solid yellow;
-    font-family: 'Orbitron', sans-serif;
-    gap: 20px
-}
-
-.footer-izd p {
-    justify-self: flex-start;
-}
-
-.footer-centro {
-    justify-self: center;
-}
-
-.footer-der {
-    justify-self: flex-end;
-    text-align: right;
-}
-
-.footer-centro h3 {
-    color: yellow;
-    margin-bottom: 8px;
-    text-shadow: 0 0 8px yellow;
-}
-
-.footer-centro ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-centro ul li a img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px yellow;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.footer-centro ul li a img:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 20px yellow;
-}
-
-.footer-der p {
-    margin: 0;
-    font-size: 1rem;
-    text-align: right;
-    color: #fdfd96;
-}
-
-/* Media Query */
-@media (max-width: 600px) {
-    #footer {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .footer-izd, .footer-der {
-        justify-self: center;
-        text-align: center;
-    }
+    text-shadow: 0 0 10px var(--color-amarillo);
 }
