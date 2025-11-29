@@ -11,6 +11,15 @@ h1 {
     margin: 30px 0;
 }
 
+h2 {
+    color: var(--color-amarillo);
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 10px var(--color-amarillo);
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
 /* Sección: Introducción con video */
 #intro-caballeros {
     width: 100%;
@@ -64,16 +73,6 @@ h1 {
     padding: 20px 0 40px;
 }
 
-#galeria-flotante h2 {
-    color: var(--color-amarillo);
-    text-align: center;
-    font-size: 1.8rem;
-    text-shadow: 0 0 12px var(--color-amarillo);
-    margin-bottom: 20px;
-    margin-top: 5px;
-    letter-spacing: 2px;
-}
-
 #galeria-flotante .contenedor {
     display: flex;
     flex-wrap: wrap;
@@ -122,14 +121,40 @@ h1 {
     border-radius: 20px;
 }
 
-/* Sección: Historia */
-#historia h2 {
-    color: var(--color-amarillo);
-    text-transform: uppercase;
-    text-align: center;
-    text-shadow: 0 0 10px var(--color-amarillo);
-    letter-spacing: 2px;
-    margin-bottom: 18px;
+/* Sección: Temporadas */
+#temporadas {
+  margin-top: 40px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+/* Lista personalizada */
+#lista-temporadas {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+#lista-temporadas li {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+#lista-temporadas .num {
+  color: var(--color-amarillo);
+  font-weight: bold;
+  text-align: right;
+}
+
+#lista-temporadas .titulo {
+  color: var(--color-text);
+  text-align: left;
 }
 
 /* Sección: Tabla de personajes */
@@ -137,14 +162,6 @@ h1 {
     padding: 40px 20px;
 }
 
-#tabla h2 {
-    color: var(--color-amarillo);
-    text-transform: uppercase;
-    text-align: center;
-    text-shadow: 0 0 10px var(--color-amarillo);
-    letter-spacing: 2px;
-    margin-bottom: 18px;
-}
 
 #tabla table {
     width: 90%;

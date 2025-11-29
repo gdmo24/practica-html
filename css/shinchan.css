@@ -1,9 +1,7 @@
-/* === shinchan.css === */
 
-/* --- CONTENIDO ESPECÍFICO DE SHIN CHAN --- */
 h1 {
-    color: var(--rojo-oscuro); /* Usa tu variable definida para rojo */
-    text-shadow: 0 0 10px var(--rojo-claro); /* Efecto neón con amarillo */
+    color: var(--rojo-oscuro); 
+    text-shadow: 0 0 10px var(--rojo-claro); 
     font-weight: 900;
     letter-spacing: 2px;
     font-size: 3.5rem;
@@ -11,17 +9,17 @@ h1 {
     margin: 30px 0;
 }
 
-/* Títulos H2 */
-#intro-shinchan h2,
-#galeria-shinchan h2 {
-    color: var(--rojo-claro); /* asumiendo que tienes esta variable */
-    text-shadow: 0 0 12px var(--rojo-oscuro);
-    margin-bottom: 20px;
-    margin-top: 5px;
-    letter-spacing: 2px;
+h2 {
+  color: var(--rojo-claro);
+  text-shadow: 0 0 12px var(--rojo-oscuro);
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0;
+  letter-spacing: 2px;
 }
 
-/* Contenedor del vídeo */
+
+/* Introducción con video */
 .div-shinchan {
     position: relative;
     width: 90%;
@@ -100,18 +98,45 @@ h1 {
     object-fit: contain;
 }
 
+/* Curiosidades */
+#curiosidades-shinchan {
+  margin-top: 40px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+#curiosidades-shinchan ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+
+#curiosidades-shinchan li {
+  position: relative;
+  padding-left: 28px; 
+  margin: 12px 0;
+  font-size: 1.2rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+
+#curiosidades-shinchan li::before {
+  content: "🍙";
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  font-size: 1.2rem;
+  text-shadow: 0 0 8px var(--rojo-claro);
+}
+
+
 /* Tabla de personajes */
 #tabla-shinchan {
     border-bottom: 2px solid var(--rojo-oscuro);
     padding-bottom: 40px;
-}
-#tabla-shinchan h2 {
-    color: var(--rojo-claro);
-    text-transform: uppercase;
-    text-align: center;
-    text-shadow: 0 0 10px var(--rojo-oscuro);
-    letter-spacing: 2px;
-    margin-bottom: 18px;
 }
 #tabla-shinchan table {
     width: 90%;
