@@ -1,9 +1,7 @@
-/* === caballeros.css === */
 
-/* --- CONTENIDO ESPECÍFICO DE CABALLEROS DEL ZODIACO --- */
 h1 {
-    color: var(--color-amarillo); /* Usa tu variable definida para rojo */
-    text-shadow: 0 0 10px var(--color-amarillo); /* Efecto neón con amarillo */
+    color: var(--color-amarillo); 
+    text-shadow: 0 0 10px var(--color-amarillo); 
     font-weight: 900;
     letter-spacing: 2px;
     font-size: 3.5rem;
@@ -20,23 +18,13 @@ h2 {
     margin-bottom: 18px;
 }
 
-/* Sección: Introducción con video */
+/* Video */
 #intro-caballeros {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 40px 0 60px;
-}
-
-#intro-caballeros h2 {
-    color: var(--color-amarillo);
-    text-align: center;
-    font-size: 1.8rem;
-    text-shadow: 0 0 12px var(--color-amarillo);
-    margin-bottom: 20px;
-    margin-top: 5px;
-    letter-spacing: 2px;
 }
 
 .div-caballeros {
@@ -121,43 +109,43 @@ h2 {
     border-radius: 20px;
 }
 
-/* Sección: Temporadas */
+/* Temporadas */
 #temporadas {
-  margin-top: 40px;
-  text-align: center;
-  color: var(--color-text);
+    margin-top: 40px;
+    text-align: center;
+    color: var(--color-text);
 }
 
-/* Lista personalizada */
+
 #lista-temporadas {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 600px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
 }
 
 #lista-temporadas li {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin: 10px 0;
-  font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 10px 0;
+    font-size: 1.2rem;
 }
 
 #lista-temporadas .num {
-  color: var(--color-amarillo);
-  font-weight: bold;
-  text-align: right;
+    color: var(--color-amarillo);
+    font-weight: bold;
+    text-align: right;
 }
 
 #lista-temporadas .titulo {
-  color: var(--color-text);
-  text-align: left;
+    color: var(--color-text);
+    text-align: left;
 }
 
-/* Sección: Tabla de personajes */
+/* Tabla de personajes */
 #tabla {
     padding: 40px 20px;
 }
@@ -172,7 +160,7 @@ h2 {
 }
 
 #tabla th {
-    background-color: #111;
+    background-color: var(--color-bg);
     color: var(--color-amarillo);
     padding: 15px;
     border: 1px solid var(--color-amarillo);

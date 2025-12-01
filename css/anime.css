@@ -1,6 +1,14 @@
-/* === anime.css === */
 
-/* --- BANNERS INDIVIDUALES DE ANIME --- */
+h2 {
+    color: var(--color-amarillo);
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 10px var(--rojo-claro);
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+/* BANNER */
 
 .banner {
     width: 100%;
@@ -11,37 +19,27 @@
     animation: cambiarFondo 20s infinite;
 }
 
-/* Animación de cambio de imagen */
 @keyframes cambiarFondo {
     0%, 31% {
         background-image: url("../images/portada-caballeros.jpg");
         filter: brightness(100%);
     }
-
     31%, 33% {
         filter: brightness(60%) blur(1px);
     }
-
     34%, 63% {
         background-image: url("../images/portada-shinchan.jpg");
         filter: brightness(100%);
     }
-
     63%, 66% {
         filter: brightness(60%) blur(1px);
     }
-
     67%, 100% {
         background-image: url("../images/portada-naruto.jpg");
         filter: brightness(100%);
     }
 }
 
-
-/* Estilos comunes para todas las secciones de anime */
-.section-anime {
-    padding: 40px 20px;
-}
 
 .section-anime h3 {
     margin-bottom: 10px;
@@ -50,13 +48,11 @@
     letter-spacing: 2px;
     font-family: var(--font-main);
 }
-
 .section-anime ul {
     padding: 0;
     margin: 20px auto;
     font-weight: bold;
 }
-
 .section-anime img {
     border-radius: 15px;
     margin: 20px 0;
@@ -64,46 +60,39 @@
     height: auto;
 }
 
-/* --- Tema: Caballeros del Zodíaco (Amarillo) --- */
+/* Caballeros del Zodíaco */
 .caballeros {
     border-top: 2px solid var(--amarillo);
-    /* Puedes añadir otros estilos generales de la sección si se repiten */
 }
-
 .caballeros h3 {
     color: var(--amarillo);
     text-shadow: 0 0 20px var(--amarillo);
 }
-
 .caballeros img {
     box-shadow: 0 0 20px var(--amarillo);
 }
 
-/* --- Tema: Shin Chan (Rojo) --- */
+/* Shin Chan */
 .shinchan {
     border-top: 2px solid var(--rojo-oscuro);
 }
-
 .shinchan h3 {
     color: var(--rojo-claro);
     text-shadow: 0 0 20px var(--rojo-oscuro);
 }
-
 .shinchan img {
     box-shadow: 0 0 20px var(--rojo-claro);
 }
 
-/* --- Tema: Naruto (Naranja) --- */
+/* Naruto */
 .naruto {
     border-top: 2px solid var(--naranja);
     border-bottom: 2px solid var(--naranja);
 }
-
 .naruto h3 {
     color: #ffa726; /* podrías definir otra variable si lo deseas */
     text-shadow: 0 0 20px var(--naranja);
 }
-
 .naruto img {
     box-shadow: 0 0 20px var(--naranja);
 }

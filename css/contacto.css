@@ -10,15 +10,31 @@ body {
     min-height: 100vh;
 }
 h1 {
-    color: var(--color-amarillo); /* Usa tu variable definida para rojo */
-    text-shadow: 0 0 10px var(--color-amarillo); /* Efecto neón con amarillo */
+    color: var(--color-amarillo); 
+    text-shadow: 0 0 10px var(--color-amarillo); 
     font-weight: 900;
     letter-spacing: 2px;
     font-size: 3.5rem;
     text-align: center;
     margin: 30px 0;
 }
-/* --- Sección Contacto --- */
+h2 {
+    color: var(--color-amarillo);
+    text-shadow: 0 0 12px var(--rojo-claro);
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+h3 {
+    color: var(--color-amarillo);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px var(--rojo-claro);
+}
+/* --- Contacto --- */
 #contacto {
     margin: 40px auto;
     background-color: rgba(0, 0, 0, 0.7);
@@ -33,14 +49,6 @@ h1 {
 #contacto input[type="radio"] {
     width: auto;
     margin-right: 10px;
-}
-
-#contacto h3 {
-    color: var(--color-amarillo);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    text-shadow: 0 0 10px var(--color-amarillo);
 }
 
 form {
@@ -62,14 +70,13 @@ select {
     padding: 8px;
     border: none;
     border-radius: 5px;
-    background-color: var(--color-gris); /* Gris oscuro */
+    background-color: var(--color-gris);
     color: var(--color-text);
     font-size: 1rem;
     transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-input:focus,
-select:focus {
+input:focus, select:focus {
     outline: none;
     box-shadow: 0 0 10px var(--color-amarillo);
     background-color: var(--color-gris); 
