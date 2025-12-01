@@ -8,6 +8,12 @@ h2 {
     margin-bottom: 18px;
 }
 
+h2:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 15px var(--rojo-claro);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
 /* BANNER */
 
 .banner {

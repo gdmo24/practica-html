@@ -46,64 +46,6 @@ nav a:hover {
     background-color: transparent;
 }
 
-/* SUBMENÚ */
-.submenu {
-    position: relative;
-}
-
-.submenu .desplegable {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%);
-    background: none;
-    min-width: 250px;
-    z-index: 100;
-    background: none;
-    box-shadow: none;
-    border: none;
-}
-.submenu .desplegable a {
-    display: block;
-    padding: 4px 0;
-    color: var(--color-texto);
-    background-color: transparent;
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
-}
-.submenu .desplegable a:hover {
-    transform: scale(1.2);
-    color: var(--color-amarillo);
-    text-shadow: 0 0 10px var(--color-amarillo);
-    background-color: transparent;
-}
-
-.submenu:hover .desplegable {
-    display: block;
-}
-.desplegable {
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-}
-
-.desplegable a {
-    display: block;
-    padding: 4px 0;
-    color: var(--color-texto);
-    white-space: nowrap;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-}
-
-.desplegable a:hover {
-    color: var(--amarillo);
-    background-color: transparent;
-    box-shadow: var(--amarillo);
-    text-shadow: 0 0 8px var(--amarillo);
-}
-
 @media (max-width: 768px) {
     nav ul {
         display: grid;
@@ -112,6 +54,7 @@ nav a:hover {
         padding: 15px;
         width: 100%;
     }
+
     nav a {
         display: block;
         text-align: center;
@@ -125,15 +68,18 @@ nav a:hover {
         grid-template-columns: 1fr;
         gap: 0;
     }
+
     nav ul li {
         width: 100%;
         border-top: 1px solid #333;
     }
+
     nav a {
         padding: 15px 0;
         font-size: 1.1em;
     }
 }
+
 
 /* FOOTER */
 #footer {
