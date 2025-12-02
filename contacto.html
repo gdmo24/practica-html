@@ -30,20 +30,13 @@
         <h2>Formulario de contacto</h2>
 
         <form action="contacto.html" method="post">
-            
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" value="Escribe tu nombre"><br>
+            <p>Nombre</p>
+            <label for="nombre"></label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre"><br>
+            <p>Apellido</p>
+            <label for="apellido"></label>
+            <input type="text" id="apellido" name="apellido" required placeholder="Escribe tu apellido"><br>
 
-            <label for="apellido">apellido</label>
-            <input type="text" id="apellido" name="apellido" value="Escribe tu apellido"><br>
-
-            <p>Introduce tu usuario</p>
-
-            <label for="username">Usuario:</label>
-            <input type="text" id="username" name="username"><br>
-
-            <label for="pwd">Password:</label>
-            <input type="password" id="pwd" name="pwd" minlength="2" maxlength="8">
 
             <p>Selecciona tu serie favorita</p>
 
@@ -56,9 +49,17 @@
             <input type="radio" id="Naruto" name="personaje-favorito" value="Naruto">
             <label for="Naruto">Naruto</label><br>
 
-            <label for="email">Correo electrónico</label>
+            <p>¿Por qué es tu serie favorita?</p>
+
+            <label for="razon"></label><br>
+            <textarea id="razon" name="razon" rows="8" cols="50" placeholder="Cuéntanos qué te gusta de esta serie..."></textarea><br>
+
+            <p>Correo electrónico</p>
+
+            <label for="email"></label>
             <input id="email" name="email" type="email" required placeholder="tumail@dominio.com"><br>
-            <label for="series">¿Qué otras series están entre tus favoritas?</label>
+            <p>¿Tienes otra serie favorita?</p>
+            <label for="series"></label>
             <select name="series" id="series">
                 <option value="Dragon">Dragon Ball Z</option>
                 <option value="Piece">One Piece</option>
