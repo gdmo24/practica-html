@@ -4,10 +4,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
-    font-family: 'Orbitron', sans-serif;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
 }
 h1 {
     color: var(--color-amarillo); 
@@ -20,7 +18,7 @@ h1 {
 }
 h2 {
     color: var(--color-amarillo);
-    text-shadow: 0 0 12px var(--rojo-claro);
+    text-shadow: 0 0 12px var(--color-amarillo);
     text-align: center;
     font-size: 2rem;
     margin: 20px 0;
@@ -32,13 +30,12 @@ h3 {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    text-shadow: 0 0 10px var(--rojo-claro);
+    text-shadow: 0 0 10px var(--color-amarillo);
 }
 /* --- Contacto --- */
 #contacto {
     margin: 40px auto;
     background-color: rgba(0, 0, 0, 0.7);
-    border: 2px solid var(--color-amarillo);
     border-radius: 10px;
     box-shadow: 0 0 20px var(--color-amarillo);
     padding: 40px 50px;
@@ -61,35 +58,35 @@ form {
 label {
     color: var(--color-amarillo);
     font-weight: bold;
+    margin-top: 15px;
+}
+
+.series {
+    color: var(--color-amarillo);
+    font-weight: bold;
     margin-top: 8px;
 }
 
-input,
-select {
+input, select {
     width: 100%;
     padding: 8px;
     border: none;
     border-radius: 5px;
-    background-color: var(--color-gris);
-    color: var(--color-text);
     font-size: 1rem;
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 input:focus, select:focus {
-    outline: none;
     box-shadow: 0 0 10px var(--color-amarillo);
     background-color: var(--color-gris); 
 }
 
 input[type="submit"] {
     background-color: var(--color-amarillo); 
-    color: black;
+    color: var(--color-bg);
     font-weight: bold;
-    border: none;
     border-radius: 5px;
     padding: 10px;
-    cursor: all-scroll;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -98,15 +95,3 @@ input[type="submit"]:hover {
     box-shadow: 0 0 15px var(--color-amarillo);
 }
 
-#contacto a {
-    display: inline-block;
-    margin-top: 20px;
-    color: var(--color-amarillo);
-    text-decoration: none;
-    font-weight: bold;
-    transition: text-shadow 0.3s ease;
-}
-
-#contacto a:hover {
-    text-shadow: 0 0 10px var(--color-amarillo);
-}

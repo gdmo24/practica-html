@@ -1,40 +1,30 @@
-h1 {
-    color: var(--color-amarillo); 
-    text-shadow: 0 0 10px var(--rojo-claro); 
-    font-weight: 900;
-    letter-spacing: 2px;
-    font-size: 3.5rem;
-    text-align: center;
-    margin: 30px 0;
-}
 
-h2 {
-    color: var(--color-amarillo);
-    text-shadow: 0 0 12px var(--rojo-oscuro);
-    text-align: center;
-    font-size: 2rem;
-    margin: 20px 0;
-    letter-spacing: 2px;
-}
 
-/* --- Sección Acerca de --- */
-#acercade {
-    padding: 40px 20px;
-}
-
-#acercade p {
-    margin: 10px auto;
-    line-height: 1.6;
-    font-size: 1.1rem;
-    text-align: justify;
-}
-
-/* --- Sección Localización --- */
+/* Localización */
 #localizacion {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 40px 0 60px;
 }
+#localizacion .acerca{
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
+#localizacion iframe {
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    #localizacion {
+        flex-direction: column;  
+        align-items: center;   
+        text-align: center;
+    }
+    #localizacion iframe {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}

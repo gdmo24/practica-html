@@ -1,5 +1,5 @@
 
-/* RESET GENERAL */
+/* GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@
     --font-main: 'Orbitron', sans-serif;
 }
 
-/* FUENTES PERSONALIZADAS */
+/* FUENTES DESCARGADAS */
 @font-face {
     font-family: 'Orbitron';
     src: url('../fonts/orbitron/orbitron-light.otf') format('opentype');
@@ -51,7 +51,7 @@ body {
     text-align: center;
 }
 
-/* TÍTULOS */
+/* ENCABEZADOS */
 h1, h2, h3 {
     font-family: var(--font-main);
 }
@@ -59,34 +59,53 @@ h1 { font-weight: 900; }
 h2 { font-weight: 700; }
 h3 { font-weight: 500; }
 
+h1 {
+    color: var(--color-amarillo); 
+    text-shadow: 0 0 10px var(--color-amarillo); 
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 30px 0;
+}
+
+h2 {
+    color: var(--color-amarillo);
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 10px var(--color-amarillo);
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
 /* PÁRRAFOS */
 p {
-    line-height: 1.6;
+    line-height: 1.5;
     font-size: 1.1rem;
     text-align: left;
     color: var(--color-text);
     margin: 10px auto;
 }
 
-/* ENLACES */
+/* ENLACES GENERAL */
 a {
     text-decoration: none;
     color: inherit;
 }
 
-/* LISTAS */
+/* LISTAS GENERAL */
 ul, ol {
     list-style: none;
 }
 
-/* IMÁGENES */
+/* IMÁGENES GENERAL */
 img {
     border-radius: 15px;
     margin: 20px 0;
     width: 100%;
     max-width: 350px;
     height: auto;
-    box-shadow: 0 0 20px var(--color-yellow); /* por defecto amarillo */
+    box-shadow: 0 0 20px var(--color-amarillo); 
 }
 
 /* MAIN */
@@ -94,7 +113,7 @@ main {
     margin-top: 5%;
 }
 
-/* SECCIONES */
+/* SECCIONES GENERAL */
 section {
     padding: 40px 20px;
 }

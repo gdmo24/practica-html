@@ -1,23 +1,14 @@
 
-
 h1 {
-    color: var(--color-naranja); 
-    text-shadow: 0 0 10px var(--color-naranja); 
-    font-weight: 900;
-    letter-spacing: 2px;
-    font-size: 3.5rem;
-    text-align: center;
-    margin: 30px 0;
+    color: var(--color-naranja);
+    text-shadow: 0 0 20px var(--color-naranja);
 }
 
 h2 {
     color: var(--color-naranja);
-    text-transform: uppercase;
-    text-align: center;
     text-shadow: 0 0 10px var(--color-naranja);
-    letter-spacing: 2px;
-    margin-bottom: 18px;
 }
+
 
 /* Video */
 #intro-naruto {
@@ -106,7 +97,6 @@ h2 {
     transform: translateX(-50%) scale(1.2);
     width: 320px;
     height: auto;
-    object-fit: contain;
     border-radius: 20px;
 }
 
@@ -123,12 +113,9 @@ h2 {
 #tabla-naruto table {
     width: 80%;
     max-width: 700px;
-    border-collapse: separate;
-    border-spacing: 0 20px;
 }
 
-#tabla-naruto > table > tbody > tr {
-    background: transparent;
+#tabla-naruto > table > tbody > tr { /* llama al primer tr despues del section */
     height: 230px;
     border: 2px solid var(--color-naranja);
     border-radius: 15px;
@@ -140,7 +127,7 @@ h2 {
     margin: 10px 0;
 }
 
-#tabla-naruto > table > tbody > tr td {
+#tabla-naruto > table > tbody > tr td { /* llama al td despues del primer tr */
     border: none;
     padding: 15px;
     vertical-align: middle;
@@ -171,18 +158,41 @@ h2 {
 }
 
 #tabla-naruto .info h3 {
-    margin: 0;
-    font-size: 1.4rem;
-    color: var(--color-text);
-    text-shadow: 0 0 8px var(--color-naranja);
+    font-size: 25px;
+    white-space: nowrap; /* no deja salto de linea */
+}
+
+#tabla-naruto .info p {
+    font-size: 1rem;
     line-height: 1.6;
     white-space: nowrap;
 }
 
-#tabla-naruto .info p {
-    margin: 0;
-    color: var(--color-text);
-    font-size: 1rem;
-    line-height: 1.6;
-    white-space: nowrap;
+@media (max-width: 600px) {
+  #tabla-naruto table {
+    width: 100%;
+    max-width: none;
+  }
+
+  #tabla-naruto > table > tbody > tr {
+    align-items: center;
+    height: auto;
+    gap: 15px;
+  }
+
+  #tabla-naruto img {
+    width: 140px;
+    height: 140px;
+  }
+
+  #tabla-naruto .info {
+    margin-left: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  #tabla-naruto .info h3,
+  #tabla-naruto .info p {
+    white-space: normal;   /* deja que el texto salte de línea */
+  }
 }

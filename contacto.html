@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,23 +21,23 @@
             <li><a href="caballeros.html">Cabelleros del Zodiaco</a></li>
             <li><a href="shinchan.html">Shin Chan</a></li>
             <li><a href="naruto.html">Naruto</a></li>
-            <li><a href="/practica-html/contacto.html">Contacto</a></li>
-            <li><a href="/acerca.html">Acerca de</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="acerca.html">Acerca de</a></li>
         </ul>
+
     </nav>
     <section id="contacto">
+
         <h2>Formulario de contacto</h2>
 
         <form action="contacto.html" method="post">
-            <p>Nombre</p>
-            <label for="nombre"></label>
+        
+            <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre"><br>
-            <p>Apellido</p>
-            <label for="apellido"></label>
+            <label for="apellido">Apellido</label>
             <input type="text" id="apellido" name="apellido" required placeholder="Escribe tu apellido"><br>
 
-
-            <p>Selecciona tu serie favorita</p>
+            <p class="series">Selecciona tu serie favorita:</p>
 
             <input type="radio" id="Caballeros" name="personaje-favorito" value="Caballeros">
             <label for="Caballeros">Caballeros del Zodiaco</label>
@@ -49,50 +48,43 @@
             <input type="radio" id="Naruto" name="personaje-favorito" value="Naruto">
             <label for="Naruto">Naruto</label><br>
 
-            <p>¿Por qué es tu serie favorita?</p>
+            <label for="razon">¿Por qué es tu serie favorita?</label><br>
+            <textarea id="razon" name="razon" rows="8" cols="36" placeholder="Cuéntanos qué más te gusta de esta serie..."></textarea><br>
 
-            <label for="razon"></label><br>
-            <textarea id="razon" name="razon" rows="8" cols="50" placeholder="Cuéntanos qué te gusta de esta serie..."></textarea><br>
-
-            <p>Correo electrónico</p>
-
-            <label for="email"></label>
+            <label for="email">Correo electrónico</label>
             <input id="email" name="email" type="email" required placeholder="tumail@dominio.com"><br>
-            <p>¿Tienes otra serie favorita?</p>
-            <label for="series"></label>
+
+            <label for="series">¿Tienes otra serie favorita?</label>
             <select name="series" id="series">
                 <option value="Dragon">Dragon Ball Z</option>
                 <option value="Piece">One Piece</option>
                 <option value="Pokemon">Pokemon</option>
                 <option value="Inuyasha">Inuyasha</option>
-            </select><br>
+            </select>
             <input type="submit" value="Enviar">
-
         </form>
 
     </section>
-    <p><a href="index.html">Volver al inicio</a></p>
+ 
     <footer id="footer">
-        <div class="footer-izd">
-            <p>2025 Anime clásico</p>
-        </div>
-        <div class="footer-centro">
-            <h3>Redes sociales</h3>
-            <ul>
-                <li><a href="https://www.facebook.com/groups/452373205686442?locale=nn_NO" target="_blank">
-                        <img src="images/facebook.png" alt="Facebook"></a></li>
-                <li><a href="https://www.instagram.com/caballeros_del_zodiaco.la/" target="_blank">
-                        <img src="images/instagram.png" alt="Instagram"></a></li>
-                <li><a href="https://www.tiktok.com/@caballerosdelzodiaco12">
-                        <img src="images/logo-tiktok.png" alt="Tiktok"></a></li>
-                <li><a href="https://x.com/NoContextSeiya" target="_blank">
-                        <img src="images/x.png" alt="X"></a></li>
-            </ul>
-        </div>
-        <div class="footer-der">
-            <p>Proyecto Lenguaje de marcas 1 ASIR</p>
-        </div>
+      <div class="footer-izd">
+        <p>Anime clásico</p>
+      </div>
+      <div class="footer-centro">
+        <h3>Redes sociales</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/groups/452373205686442?locale=nn_NO"
+              target="_blank"><img src="images/facebook.png" alt="Facebook"></a></li>
+          <li><a href="https://www.instagram.com/caballeros_del_zodiaco.la/" target="_blank">
+              <img src="images/instagram.png" alt="Instagram"></a></li>
+          <li><a href="https://www.tiktok.com/@caballerosdelzodiaco12">
+            <img src="images/logo-tiktok.png" alt="Tiktok"></a></li>
+          <li><a href="https://x.com/NoContextSeiya" target="_blank">
+              <img src="images/x.png" alt="X"></a></li></ul>
+      </div>
+      <div class="footer-der">
+        <p>Proyecto Lenguaje de marcas 1 ASIR</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

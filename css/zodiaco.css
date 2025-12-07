@@ -1,24 +1,7 @@
 
-h1 {
-    color: var(--color-amarillo); 
-    text-shadow: 0 0 10px var(--color-amarillo); 
-    font-weight: 900;
-    letter-spacing: 2px;
-    font-size: 3.5rem;
-    text-align: center;
-    margin: 30px 0;
-}
-
-h2 {
-    color: var(--color-amarillo);
-    text-transform: uppercase;
-    text-align: center;
-    text-shadow: 0 0 10px var(--color-amarillo);
-    letter-spacing: 2px;
-    margin-bottom: 18px;
-}
 
 /* Video */
+
 #intro-caballeros {
     width: 100%;
     display: flex;
@@ -37,11 +20,7 @@ h2 {
     border-radius: 15px;
     box-shadow: 0 0 25px var(--color-amarillo);
 }
-@media (max-width: 700px) {
-.div-caballeros {
-    padding-bottom: 75%;
-}
-}
+
 .div-caballeros iframe {
     position: absolute;
     top: 0;
@@ -52,12 +31,19 @@ h2 {
     border-radius: 15px;
 }
 
-/* Sección: Galería flotante */
+@media (max-width: 700px) {
+.div-caballeros {
+    padding-bottom: 75%;
+}
+}
+
+
+/* Galería flotante */
+
 #galeria-flotante {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 20px 0 40px;
 }
 
@@ -78,6 +64,11 @@ h2 {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
+@keyframes flotando {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-8px); }
+}
+
 #galeria-flotante .contenedor li img {
     position: absolute;
     top: -19px;
@@ -87,11 +78,6 @@ h2 {
     object-fit: cover;
     border-radius: 18px;
     transition: transform 0.4s ease, height 0.4s ease, box-shadow 0.4s ease;
-}
-
-@keyframes flotando {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-8px); }
 }
 
 #galeria-flotante .contenedor li:hover {
@@ -105,21 +91,12 @@ h2 {
     transform: translateX(-50%) scale(1.2);
     width: 320px;
     height: auto;
-    object-fit: contain;
     border-radius: 20px;
 }
 
 /* Temporadas */
-#temporadas {
-    margin-top: 40px;
-    text-align: center;
-    color: var(--color-text);
-}
-
 
 #lista-temporadas {
-    list-style: none;
-    padding: 0;
     margin: 0 auto;
     max-width: 600px;
 }
@@ -128,8 +105,7 @@ h2 {
     display: grid;
     grid-template-columns: 160px 1fr;
     justify-content: center;
-    align-items: center;
-    gap: 12px;
+    gap: 10px;
     margin: 10px 0;
     font-size: 1.2rem;
 }
@@ -141,17 +117,16 @@ h2 {
 }
 
 #lista-temporadas .titulo {
-    color: var(--color-text);
     text-align: left;
 }
 
-/* Tabla de personajes */
-#tabla {
+/* Personajes */
+#Caballeros-bronce {
     padding: 40px 20px;
+    margin-bottom: 40px;
 }
 
-
-#tabla table {
+#Caballeros-bronce table {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
@@ -159,33 +134,49 @@ h2 {
     box-shadow: 0 0 15px var(--color-amarillo);
 }
 
-#tabla th {
-    background-color: var(--color-bg);
+#Caballeros-bronce th {
     color: var(--color-amarillo);
     padding: 15px;
     border: 1px solid var(--color-amarillo);
     font-size: 1.2rem;
 }
 
-#tabla td {
+#Caballeros-bronce td {
     border: 1px solid var(--color-amarillo);
     padding: 15px;
-    color: var(--color-text);
-    background-color: var(--color-bg);
     text-align: center;
 }
 
-#tabla img {
+#Caballeros-bronce img {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 10px;
     margin-top: 8px;
-    box-shadow: 0 0 10px var(--color-amarillo);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#tabla img:hover {
+#Caballeros-bronce img:hover {
     transform: scale(1.15);
     box-shadow: 0 0 20px var(--color-amarillo);
+}
+
+@media (max-width: 600px) {
+  #Caballeros-bronce {
+    padding: 20px 10px;
+  }
+
+  #Caballeros-bronce table {
+
+    width: 100%;
+  }
+
+  #Caballeros-bronce th, #Caballeros-bronce td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  #Caballeros-bronce img {
+    width: 100px;
+    height: 100px;
+  }
 }
